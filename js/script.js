@@ -13,10 +13,14 @@ quotes = [{quote:'I have no special talent. I am only passionately curious', sou
     {quote:'Do not live the same year 75 times and call it a life.', source:'Robin Sharma', citation:'Public Speech in Toronto', year:2010}, {quote:'That which does not kill us makes us stronger.', source:'Friedrich Nietzsche', citation:'Twilight of the Idols', year:1889}]
 
 
+console.log(quotes)
+
 
 /***
  * `getRandomQuote` function
 ***/
+
+function getRandomQuote
 
 
 
