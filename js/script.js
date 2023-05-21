@@ -27,6 +27,8 @@ function getRandomQuote() {
 }
 
 
+
+
 /// I create a function that will take my random quote and place that quote into my HTML code.
 
 function printQuote(){
@@ -51,6 +53,19 @@ function printQuote(){
     display_quote + `</p>`
 
     document.getElementById('quote-box').innerHTML = display_quote;
+    Random_Back()
+
+}
+
+
+
+/// Creating a fucntion that displays a Random Background each time is called
+
+function Random_Back (){
+
+let colors = ['red', 'blue', 'yellow', 'green', 'orange', 'purple'];
+    let num = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[num];
 
 }
 
