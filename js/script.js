@@ -35,11 +35,11 @@ function printQuote(){
         `<p class="source">${random_quote.source}`
 
     if (random_quote.citation){
-        display_quote + `<span class="citation">${random_quote.citation}</span>`
+        display_quote += `<span class="citation">${random_quote.citation}</span>`
     }
     if (random_quote.year){
 
-    display_quote + `<span class="year">${random_quote.year}</span>`
+    display_quote += `<span class="year">${random_quote.year}</span>`
     }
     display_quote + `</p>`
 
