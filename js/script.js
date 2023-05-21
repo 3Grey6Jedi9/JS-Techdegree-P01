@@ -28,10 +28,6 @@ function getRandomQuote() {
 
 
 
-/***
- * `printQuote` function
-***/
-
 function printQuote(){
 
     let random_quote = getRandomQuote()
