@@ -15,11 +15,6 @@ quotes = [{quote:'I have no special talent. I am only passionately curious', sou
 
 
 
-
-/***
- * `getRandomQuote` function
-***/
-
 function getRandomQuote() {
 
     let number = Math.floor(Math.random() * quotes.length);
@@ -29,10 +24,7 @@ function getRandomQuote() {
      */
     return quotes[number];
 
-
 }
-
-
 
 
 
@@ -40,7 +32,24 @@ function getRandomQuote() {
  * `printQuote` function
 ***/
 
+function printQuote(){
 
+    let random_quote = getRandomQuote()
+    let display_quote = `<p class="quote">${random_quote.quote}</p>` +
+        `<p class="source">${random_quote.source}`
+
+    if (random_quote.citation){
+        display_quote + `<span class="citation">${random_quote.citation}</span>`
+    }
+    if (random_quote.year){
+
+    display_quote + `<span class="year">${random_quote.year}</span>`
+    }
+    display_quote + `</p>`
+
+    document.getElementById('quote-box').innerHTML = display_quote;
+
+}
 
 /***
  * click event listener for the print quote button
