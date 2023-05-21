@@ -53,7 +53,7 @@ function printQuote(){
     display_quote + `</p>`
 
     document.getElementById('quote-box').innerHTML = display_quote;
-    Random_Back()
+    random_Back()
 
 }
 
@@ -61,7 +61,7 @@ function printQuote(){
 
 /// Creating a fucntion that displays a Random Background each time is called
 
-function Random_Back (){
+function random_Back (){
 
 let colors = ['red', 'blue', 'yellow', 'green', 'orange', 'purple'];
     let num = Math.floor(Math.random() * colors.length);
@@ -69,6 +69,13 @@ let colors = ['red', 'blue', 'yellow', 'green', 'orange', 'purple'];
 
 }
 
+/// Printing quotes automatically
+
+function auto() {
+  setInterval(printQuote, 10000); // Executes printQuote every 10 seconds (10000 milliseconds)
+}
+
+auto()
 
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
