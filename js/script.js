@@ -3,9 +3,7 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
+/// Firstly I define the quotes I am going to use.
 
 
 quotes = [{quote:'I have no special talent. I am only passionately curious', source:'Albert Einstein', citation:'Newspaper interview', year:1930}, {quote:'love all, trust a few, do wrong to none.', source:'William Shakespeare', citation:'All is Well That Ends Well', year:1605},
@@ -14,6 +12,7 @@ quotes = [{quote:'I have no special talent. I am only passionately curious', sou
 
 
 
+/// I define the function that will help me to get one Random Quote from the quotes created before.
 
 function getRandomQuote() {
 
@@ -27,6 +26,7 @@ function getRandomQuote() {
 }
 
 
+/// I create a function that will take my random quote and place that quote into my HTML code.
 
 function printQuote(){
 
@@ -47,9 +47,6 @@ function printQuote(){
 
 }
 
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
+
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
